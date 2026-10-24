@@ -1,0 +1,6 @@
+# Core 2D Game Engine
+pygame>=2.6.0
+
+# 3D Game Engine & Mathematics
+ursina>=8.0.0
+numpy>=2.0.0

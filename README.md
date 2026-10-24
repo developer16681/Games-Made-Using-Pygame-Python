@@ -13,8 +13,8 @@ Every game in this collection is designed to run self-contained with minimal set
 | **[Chess](Pygame/Chess/chess.py)** | Pygame | 2D | Mini-max AI opponent, 3 difficulty levels, procedural sounds & chiptune BGM, move undo, board flip. | `python "Pygame/Chess/chess.py"` |
 | **[Crystal Arena](<Pygame/Crystal Arena/crystal_arena.py>)** | Ursina, NumPy | 3D | Fast-paced first-person arena shooter, procedural wave audio, dynamic lighting & shadows. | `python "Pygame/Crystal Arena/crystal_arena.py"` |
 | **[Forest Game](<Pygame/Forest Game/forest_game.py>)** | Ursina | 3D | 3D first-person exploration and survival with weapon mechanics and procedural sound generation. | `python "Pygame/Forest Game/forest_game.py"` |
-| **[Neon Drift](Pygame/Neon_Drift/neon_drift%20(1).py)** | Ursina, NumPy | 3D | Retro-synthwave 3D space racer with procedural audio synthesis and boost mechanics. | `python "Pygame/Neon_Drift/neon_drift (1).py"` |
-| **[Pacman](<Pygame/Pacman/pacman (1).py>)** | Pygame | 2D | Classic arcade Pac-Man with neon glow effects, ghost pathfinding AI, and procedural audio. | `python "Pygame/Pacman/pacman (1).py"` |
+| **[Neon Drift](Pygame/Neon_Drift/neon_drift.py)** | Ursina, NumPy | 3D | Retro-synthwave 3D space racer with procedural audio synthesis and boost mechanics. | `python "Pygame/Neon_Drift/neon_drift.py"` |
+| **[Pacman](Pygame/Pacman/pacman.py)** | Pygame | 2D | Classic arcade Pac-Man with neon glow effects, ghost pathfinding AI, and procedural audio. | `python "Pygame/Pacman/pacman.py"` |
 | **[Neon Snake](<Pygame/Snake Game/Snake_Claude.py>)** | Pygame | 2D | Polished Snake game featuring particle effects, high-score tracking, and chiptune music. | `python "Pygame/Snake Game/Snake_Claude.py"` |
 | **[Sweet Crush](Pygame/Sweet_Crush/sweet_crush.py)** | Pygame | 2D | Match-3 candy puzzle game with animated combos and in-code audio synthesis. | `python "Pygame/Sweet_Crush/sweet_crush.py"` |
 | **[Tic Tac Toe](<Pygame/Tic Tac Toe/Tic_Tac_Toe.py>)** | Pygame | 2D | Unbeatable Minimax AI & 2-player modes, confetti celebration effects, and clean UI. | `python "Pygame/Tic Tac Toe/Tic_Tac_Toe.py"` |
@@ -37,7 +37,13 @@ Every game in this collection is designed to run self-contained with minimal set
 Ensure you have **Python 3.8+** installed on your system.
 
 ### 2. Install Dependencies
-Install the required libraries for 2D (Pygame) and 3D (Ursina & NumPy) games:
+You can install all dependencies at once using `requirements.txt`:
+
+```bash
+pip install -r requirements.txt
+```
+
+Alternatively, install libraries separately:
 
 ```bash
 # For 2D games (Chess, Pacman, Snake, Sweet Crush, Tic Tac Toe, Turbo Rush)
@@ -62,13 +68,16 @@ Navigate to the game directory or launch directly using python:
 
 ```bash
 # Example: Launching Pacman
-python "Pygame/Pacman/pacman (1).py"
+python "Pygame/Pacman/pacman.py"
 
 # Example: Launching Neon Snake
 python "Pygame/Snake Game/Snake_Claude.py"
 
 # Example: Launching Crystal Arena (3D)
 python "Pygame/Crystal Arena/crystal_arena.py"
+
+# Example: Launching Neon Drift (3D)
+python "Pygame/Neon_Drift/neon_drift.py"
 
 # Example: Launching Chess
 python "Pygame/Chess/chess.py"
